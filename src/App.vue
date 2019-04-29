@@ -1,12 +1,23 @@
 <template>
   <div id="app">
     <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+      <link1></link1>
+      <link2></link2>
     </div>
-    <router-view/>
   </div>
 </template>
+
+<script>
+import input1 from './components/input'
+import resultado from './components/resultado'
+export default {
+  components: {
+'link1': input1,
+'link2':resultado
+  }
+}
+</script>
+
 
 <style>
 #app {
