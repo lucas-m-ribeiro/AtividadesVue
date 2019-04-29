@@ -1,19 +1,45 @@
 <template>
   <div id="app">
     <div id="nav">
-      <link1></link1>
-      <link2></link2>
+      
+      <!--chamando os componenetes-->
+      <evento1 @input_changed = "mudou">
+
+
+
+      </evento1>
+      
+      
+      <evento2>
+
+
+      </evento2>
+    
     </div>
   </div>
 </template>
 
 <script>
+
+//importa os arquivos dos componentes
+
 import input1 from './components/input'
 import resultado from './components/resultado'
+
 export default {
+  
+  //delcara os componentes
   components: {
-'link1': input1,
-'link2':resultado
+
+'evento1': input1,
+'evento2':resultado
+  },
+
+  //declara os metodos
+  methods: {
+    mudou(evento) {
+      alert(evento)
+    }
   }
 }
 </script>

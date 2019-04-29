@@ -1,12 +1,15 @@
 <template>
+<!--
     <div>
         <p>{{soma}}</p>
         <p>{{multiplicacao}}</p>
         <p>{{divisao}}</p>
     </div>
 </template>
+-->
 
 <script>
+/*
 export default {
     name: "resultado",
     data: function(){
@@ -15,6 +18,20 @@ export default {
             multiplicacao:'',
             divisao:''
         }
+    },
+    methods:{
+        soma = () =>{
+
+        },
+
+        multiplicacao = () =>{
+
+        },
+
+        divisao = () =>{
+
+        }
     }
 }
+*/
 </script>
