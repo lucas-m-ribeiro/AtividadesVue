@@ -6,18 +6,15 @@
     </div>
 </template>
 
-
 <script>
 
 export default {
     
     name: "resultado",
-
     props:{
         numero1:Number,
         numero2:Number
     },
-
     data: function(){
         return{
             soma: 0,

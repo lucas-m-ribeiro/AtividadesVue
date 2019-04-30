@@ -4,11 +4,10 @@
       
       <!--chamando os componenetes-->
       
-	  <evento1 v-on="numero1">
+	  <evento1 v-on="numero1" @input="soma">
       </evento1>
       
-      
-      <evento2 v-on="numero2">
+      <evento2 v-on="numero2" v-bind:numero1="3">
       </evento2>
     
     </div>
@@ -21,6 +20,7 @@
 
 import input1 from './components/input'
 import resultado from './components/resultado'
+import func from '../vue-temp/vue-editor-bridge';
 
 export default {
   
@@ -33,11 +33,12 @@ export default {
 
   //declara os metodos
   methods: {
-
-
-
-    }
-  }
+		
+	soma (a, b) {
+		return a + b;
+	}
+}
+}
 
 </script>
 

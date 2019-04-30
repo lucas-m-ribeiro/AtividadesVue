@@ -21,8 +21,8 @@ export default {
     },
 
     methods:{
-        change(event){
-            this.$emit('input_changed', event);
+        evento(event){
+            this.$emit('input', this.a, this.b);
         },
     }
 }
