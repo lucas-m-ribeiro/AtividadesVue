@@ -1,37 +1,30 @@
 <template>
-<!--
     <div>
-        <p>{{soma}}</p>
+        <p>{{numero1}}</p>
+        <p>{{numero2}}</p>
         <p>{{multiplicacao}}</p>
-        <p>{{divisao}}</p>
     </div>
 </template>
--->
+
 
 <script>
-/*
+
 export default {
+    
     name: "resultado",
+
+    props:{
+        numero1:Number,
+        numero2:Number
+    },
+
     data: function(){
         return{
             soma: 0,
             multiplicacao:'',
             divisao:''
         }
-    },
-    methods:{
-        soma = () =>{
-
-        },
-
-        multiplicacao = () =>{
-
-        },
-
-        divisao = () =>{
-
-        }
     }
 }
-*/
+
 </script>

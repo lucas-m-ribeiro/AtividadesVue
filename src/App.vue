@@ -3,16 +3,12 @@
     <div id="nav">
       
       <!--chamando os componenetes-->
-      <evento1 @input_changed = "mudou">
-
-
-
+      
+	  <evento1 v-on="numero1">
       </evento1>
       
       
-      <evento2>
-
-
+      <evento2 v-on="numero2">
       </evento2>
     
     </div>
@@ -31,38 +27,40 @@ export default {
   //delcara os componentes
   components: {
 
-'evento1': input1,
-'evento2':resultado
-  },
+	'evento1': input1,
+	'evento2':resultado
+},
 
   //declara os metodos
   methods: {
-    mudou(evento) {
-      alert(evento)
+
+
+
     }
   }
-}
+
 </script>
 
-
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-#nav {
-  padding: 30px;
+	#app {
+	font-family: 'Avenir', Helvetica, Arial, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-align: center;
+	color: #2c3e50;
 }
 
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
+	#nav {
+	padding: 30px;
 }
 
-#nav a.router-link-exact-active {
-  color: #42b983;
+	#nav a {
+	font-weight: bold;
+	color: #2c3e50;
+}
+
+
+	#nav a.router-link-exact-active {
+	color: #42b983;
 }
 </style>
