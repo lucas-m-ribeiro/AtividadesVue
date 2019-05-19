@@ -1,4 +1,23 @@
 <template>
+
+<!--
+	Crie uma aplicação Vue.js que possua as seguintes características:
+• Uma instância principal Vue.js com dois componentes;
+
+• O primeiro componente deve possuir dois elementos input que recebam
+números inteiros;
+
+• O segundo componente deve receber dois parâmetros inteiros e possuir três
+parágrafos que apresentem o resultado das seguintes operações envolvendo os
+parâmetros recebidos: soma, subtração e multiplicação;
+
+• Utilize binds, parâmetros e eventos para conectar os valores associados aos
+elementos input do primeiro componente com os parâmetros recebidos pelo
+segundo componente, de forma que cada alteração realizada nos elementos
+input do primeiro componente seja refletida imediatamente nas operações
+exibidas no segundo componente.
+-->
+
   <div id="app">
     <div id="nav">
       
